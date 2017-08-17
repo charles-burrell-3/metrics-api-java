@@ -1,0 +1,27 @@
+jdbc:
+  username: sa
+  password:
+  url: jdbc:h2:file:./target/metrics
+  driverManager:  org.h2.Driver
+default:
+  datetime:
+    timezone: America/Los_Angeles
+    format: yyyy-MM-dd'T'HH:mm:ss:S
+api:
+  title: Company-B Metrics API
+  description: Endpoint for submitting and retrieving Metrics
+  version: 1.0.0
+  contact: C.A. Burrell (deltafront@gmail.com)
+  license:
+    name: MIT License
+    url: ./license.html
+info:
+  app:
+    name: Metrics API
+    description: Generic Metrics retention
+    version: 1.0.0
+    orginization: CompanyB
+    lead: Charles Burrell III
+    email: deltafront@gmail.com
+flyway:
+  locations: filesystem:src/main/resources/db/migration/dev
