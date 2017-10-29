@@ -9,7 +9,7 @@ import static junit.framework.Assert.assertEquals;
 
 public class DateUtilsTests extends TestBase
 {
-    private Long expectedTimestamp;
+    private long expectedTimestamp;
     private String expectedDateString;
 
     @Before

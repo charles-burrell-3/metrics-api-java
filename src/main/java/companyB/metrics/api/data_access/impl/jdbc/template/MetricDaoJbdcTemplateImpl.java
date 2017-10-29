@@ -41,7 +41,6 @@ public class MetricDaoJbdcTemplateImpl extends BaseMetricJdbcTemplateApiDataAcce
         return  insertUpdateDelete(sql) > 0;
     }
 
-
     @Override
     public Boolean delete(String guid) throws SQLException
     {
@@ -87,7 +86,7 @@ public class MetricDaoJbdcTemplateImpl extends BaseMetricJdbcTemplateApiDataAcce
         return guids;
     }
 
-    private Boolean deleteMetricAndEntries(String guid) throws SQLException
+    private boolean deleteMetricAndEntries(String guid) throws SQLException
     {
         deleteMetricEntries(guid);
         return deleteRegisteredMetric(guid) > 0;
@@ -105,4 +104,3 @@ public class MetricDaoJbdcTemplateImpl extends BaseMetricJdbcTemplateApiDataAcce
         return insertUpdateDelete(deleteMetricEntriesSql);
     }
 }
-

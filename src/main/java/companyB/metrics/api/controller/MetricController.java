@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(value = "api/metric")
 public class MetricController
 {
-
     @Autowired
     private MetricApiService metricApiService;
 

@@ -14,7 +14,6 @@ import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-
 public class ListAndCountMetricsTests extends MetricTestBase
 {
     private List<String> guids;
@@ -40,10 +39,10 @@ public class ListAndCountMetricsTests extends MetricTestBase
     @Test
     public void list()
     {
-        final Long expected = 5L;
+        final long expected = 5;
         final List<String> allGuids = metricApiService.listRegisteredMetricGuids();
-        assertEquals(expected.intValue(),allGuids.size());
-        final Long count = allGuids.stream().filter((guid) -> guids.contains(guid)).count();
+        assertEquals(expected,allGuids.size());
+        final long count = allGuids.stream().filter((guid) -> guids.contains(guid)).count();
         assertEquals(expected,count);
     }
 

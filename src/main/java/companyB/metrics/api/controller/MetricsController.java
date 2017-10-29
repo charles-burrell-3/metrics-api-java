@@ -63,7 +63,6 @@ public class MetricsController
         return metricApiService.list(guid, null,until);
     }
 
-
     @ApiOperation(
             value = "List Metric Entries from  / until date / time",
             notes = "Gets all Metric Entries for a certain GUID from and until a date / time formatted as such: yyyy-mm-dd'T'HH:MM. " +

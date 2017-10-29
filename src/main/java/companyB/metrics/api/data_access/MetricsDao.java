@@ -1,6 +1,5 @@
 package companyB.metrics.api.data_access;
 
-
 import companyB.metrics.api.contract.insert.InsertMetricEntryRequest;
 import companyB.metrics.api.model.MetricEntry;
 

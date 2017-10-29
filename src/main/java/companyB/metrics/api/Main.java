@@ -50,7 +50,6 @@ public class Main extends SpringBootServletInitializer
         builder
                 .banner(new ResourceBanner(new DefaultResourceLoader().getResource("banner.txt")))
                 .sources(Main.class);
-
         return builder;
     }
 

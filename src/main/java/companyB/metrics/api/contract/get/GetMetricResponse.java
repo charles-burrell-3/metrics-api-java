@@ -8,7 +8,6 @@ public class GetMetricResponse extends BaseMetricsResponse
 {
     private Metric metric;
 
-
     public Metric getMetric()
     {
         return metric;

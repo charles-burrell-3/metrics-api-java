@@ -5,7 +5,6 @@ import companyB.metrics.api.contract.MetricsApiStatus;
 
 public class InsertMetricEntryResponse extends BaseMetricsResponse
 {
-
     @Override
     public String getMessage()
     {

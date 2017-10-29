@@ -6,7 +6,6 @@ import companyB.metrics.api.model.MetricEntry;
 import java.util.LinkedList;
 import java.util.List;
 
-
 public class ListMetricsResponse extends BaseMetricsResponse
 {
     private String since;

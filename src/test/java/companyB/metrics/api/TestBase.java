@@ -1,6 +1,5 @@
 package companyB.metrics.api;
 
-
 import companyB.metrics.api.service.FlywayService;
 import companyB.metrics.api.service.MetricApiService;
 import companyB.metrics.api.utils.DateUtils;
@@ -28,7 +27,7 @@ public class TestBase
     @Autowired
     private FlywayService flywayService;
 
-    private static Boolean migrated = false;
+    private static boolean migrated = false;
 
     @Before
     public void beforeMaster()
@@ -45,6 +44,4 @@ public class TestBase
         metricApiService.clear();
     }
 
-
 }
-

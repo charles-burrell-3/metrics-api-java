@@ -11,7 +11,6 @@ import static junit.framework.TestCase.fail;
 
 public class JdbcConnectionTests extends TestBase
 {
-
     @Test
     public void happyPath()
     {

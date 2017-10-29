@@ -1,6 +1,5 @@
 package companyB.metrics.api.contract;
 
-
 import com.google.gson.Gson;
 
 public abstract class BaseMetricsResponse

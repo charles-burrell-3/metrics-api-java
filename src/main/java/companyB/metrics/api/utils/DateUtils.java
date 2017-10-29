@@ -19,18 +19,16 @@ public class DateUtils implements InitializingBean
     @Value("${default.datetime.timezone}")
     private String defaultTimeZone;
 
-    public Long toTimestamp(String dateString)
+    public long toTimestamp(String dateString)
     {
         return (StringUtils.isNotBlank(dateString)) ?
                 dateTimeFormatter.parseDateTime(dateString.replace(".",":")).getMillis():
                 now.getMillis();
     }
 
-    public String fromTimestamp(Long timestamp)
+    public String fromTimestamp(long timestamp)
     {
-        final DateTime dateTime = (null == timestamp) ?
-                now :
-                new DateTime(timestamp, DateTimeZone.forID(defaultTimeZone));
+        final DateTime dateTime  = new DateTime(timestamp, DateTimeZone.forID(defaultTimeZone));
         return dateTimeFormatter.print(dateTime);
     }
 

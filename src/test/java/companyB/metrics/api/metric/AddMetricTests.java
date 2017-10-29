@@ -10,7 +10,6 @@ import static junit.framework.TestCase.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 
-
 public class AddMetricTests extends MetricTestBase
 {
     private RegisterMetricRequest registerMetricRequest;

@@ -1,6 +1,5 @@
 package companyB.metrics.api.metric;
 
-
 import companyB.metrics.api.contract.MetricsApiStatus;
 import companyB.metrics.api.contract.get.GetMetricResponse;
 import companyB.metrics.api.contract.register.RegisterMetricRequest;

@@ -33,11 +33,11 @@ public class MetricsTests extends TestBase
     private String dateTimeFormat;
 
     private String guid;
-    private Integer upper = 15;
-    private Integer sinceDay = 2;
-    private Integer untilDay = 6;
-    private Long sinceDayTimestamp;
-    private Long untilDayTimestamp;
+    private int upper = 15;
+    private int sinceDay = 2;
+    private int untilDay = 6;
+    private long sinceDayTimestamp;
+    private long untilDayTimestamp;
     private DateTimeFormatter dateTimeFormatter;
     private Map<String,Object>expectedAttributes;
 
@@ -239,7 +239,7 @@ public class MetricsTests extends TestBase
         assertEquals(MetricsApiStatus.SUCCESS, insertMetricEntryResponse.getStatus());
     }
 
-    private Long getTimestamp(Integer dayOfMonth)
+    private long getTimestamp(Integer dayOfMonth)
     {
         final Integer previousYear = new DateTime().getYear() - 1;
        return new DateTime(DateTimeZone.forID(defaultTimeZone))

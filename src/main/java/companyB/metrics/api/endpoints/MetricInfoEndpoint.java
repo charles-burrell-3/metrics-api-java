@@ -1,6 +1,5 @@
 package companyB.metrics.api.endpoints;
 
-
 import companyB.metrics.api.data_access.MetricDao;
 import companyB.metrics.api.data_access.MetricsDao;
 import org.slf4j.Logger;

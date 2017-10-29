@@ -1,6 +1,5 @@
 package companyB.metrics.api.contract.register;
 
-
 import companyB.metrics.api.contract.BaseMetricsRequest;
 
 public class RegisterMetricRequest extends BaseMetricsRequest
